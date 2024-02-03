@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --main-color: #e38528;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fcf2e8;
+    padding-left: 30rem;
+}
+
+section {
+    padding: 1rem 5%;
+    min-height: 100vh;
+}
+
+.heading {
+    font-size: 3.0rem;
+    padding-bottom: 1rem;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn {
+    display: initial-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: #111;
+    letter-spacing: .2rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding: 8rem 2rem;
+    width: 30rem;
+    text-align: center;
+}
+
+header .logo {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+header .logo span {
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+header .navbar a {
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    margin: 2rem 0;
+}
+
+header .navbar a:hover {
+    letter-spacing: 2rem;
+    color: var(--main-color);
+}
+
+header .follow a {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0.7rem;
+}
+
+header .follow a:hover {
+    color: var(--main-color);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.home .image {
+    flex: 1 1 40rem;
+}
+
+.home .image img {
+    width: 50%;
+}
+
+.home .content {
+    flex: 1 1 40rem;
+}
+
+.home .content .hi {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.home .content h3 {
+    font-size: 3.0rem;
+    color: #111;
+    padding: .5rem 0;
+    text-transform: uppercase;
+}
+
+.home .content h3 span {
+    font-size: 3.0rem;
+    color: var(--main-color);
+    padding: .5rem 0;
+    text-transform: uppercase;
+}
+
+.home .content .info {
+    font-size: 2.0rem;
+    color: brown;
+    padding: .5rem 0;
+}
+
+.home .content .text {
+    font-size: 2.0rem;
+    color: #666;
+    padding: .5rem 0;
+}
+
+.heading {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.about-content .info {
+    font-size: 2.0rem;
+    color: brown;
+    padding: .5rem 0;
+}
+
+.about-content .text {
+    font-size: 1.7rem;
+    color: #666;
+    padding: .5rem 0;
+}
+
+.about .image {
+    flex: 1 1 50rem;
+    width: 100px;
+    margin: 100px;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    border: 100px;
+}
+
+.skill .skills h1 {
+    font-size: 3.0rem;
+    color: #111;
+    padding: .1rem 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.skill .skills h3 {
+    font-size: 2.0rem;
+    color: #111;
+    padding: .1rem 0;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.skill .skills h3 span {
+    font-size: 2.0rem;
+    color: var(--main-color);
+    padding: .1rem 0;
+    text-transform: uppercase;
+}
+
+.skill li {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.bar {
+    height: 20px;
+    border: 1px solid #353b48;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px #666;
+    transition: all 0.3% cubic-bezier(.25, .8, .25, 1);
+}
+
+.bar:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    background: var(--main-color);
+}
+
+.html {
+    width: 90%;
+    animation: html 3s;
+}
+
+.css {
+    width: 80%;
+    animation: css 3s;
+}
+
+.javascript {
+    width: 70%;
+    animation: javascript 3s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+.projects .project h2 {
+    font-size: 2.0rem;
+    color: #111;
+    padding: .1rem 0;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.projects .project .text {
+    font-size: 1.7rem;
+    color: #666;
+    padding: .2rem 0;
+}
+
+.resume .Resume h1 {
+    font-size: 3.0rem;
+    color: #111;
+    padding: .5rem 0;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.resume .Resume .a {
+    font-size: 3.0rem;
+    color: #333;
+    padding: .5rem 0;
+    text-decoration: none;
+    border: 1px solid #333;
+}
+
+.contact .icons-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact .icons-container .icons {
+    flex: 1 1 25rem;
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+.contact .icons-container .icons i {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 50%;
+}
+
+.contact .icons-container .icons h3 {
+    color: #111;
+    font-size: 2rem;
+    padding: 5rem 0;
+}
+
+.contact .icons-container .icons p {
+    color: #666;
+    font-size: 1.7rem;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: .5rem 0;
+    text-align: center;
+    color: #666;
+    background: #fff;
+}
+
+footer span {
+    color: var(--main-color);
+}
